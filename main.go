@@ -31,7 +31,7 @@ func main() {
         for {
             select {
             case event := <-_watcher.Event:
-                fmt.Println(event)
+                log.Println(event.String())
             case err := <-_watcher.Error:
                 log.Fatalln(err)
             case <-_watcher.Closed:
