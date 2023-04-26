@@ -11,7 +11,7 @@ build:
 
 run: build
 	echo "Preparing for running..."
-	mkdir -p tmp/results
+	mkdir -p tmp/orders
 	echo "Run the default binary..."
 	./${OUTPUT}/${BINARY}
 
